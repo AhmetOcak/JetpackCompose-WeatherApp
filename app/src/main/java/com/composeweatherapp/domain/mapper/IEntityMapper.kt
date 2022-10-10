@@ -1,4 +1,4 @@
-package com.composeweatherapp.core.helpers
+package com.composeweatherapp.domain.mapper
 
 interface IEntityMapper<Entity, Model> {
 
