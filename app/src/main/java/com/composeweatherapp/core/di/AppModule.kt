@@ -1,7 +1,7 @@
 package com.composeweatherapp.core.di
 
 import android.app.Application
-import com.composeweatherapp.data.datasource.remote.api.WeatherApi
+import com.composeweatherapp.data.datasource.remote.api.weatherapi.WeatherApi
 import com.composeweatherapp.utils.NetworkService
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
@@ -11,7 +11,6 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import javax.inject.Singleton
 
 @Module
