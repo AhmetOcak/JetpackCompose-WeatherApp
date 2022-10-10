@@ -1,9 +1,7 @@
 package com.composeweatherapp.core.di
 
-import com.composeweatherapp.data.repository.RoomRepositoryImpl
-import com.composeweatherapp.data.repository.WeatherRepositoryImpl
-import com.composeweatherapp.domain.repository.RoomRepository
-import com.composeweatherapp.domain.repository.WeatherRepository
+import com.composeweatherapp.data.repository.ForecastRepositoryImpl
+import com.composeweatherapp.domain.repository.ForecastRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -16,9 +14,5 @@ abstract class RepositoryModule {
 
     @Binds
     @Singleton
-    abstract fun bindWeatherRepository(weatherRepositoryImpl: WeatherRepositoryImpl): WeatherRepository
-
-    @Binds
-    @Singleton
-    abstract fun bindRoomRepository(roomRepositoryImpl: RoomRepositoryImpl): RoomRepository
+    abstract fun bindForecastRepository(forecastRepositoryImpl: ForecastRepositoryImpl): ForecastRepository
 }
