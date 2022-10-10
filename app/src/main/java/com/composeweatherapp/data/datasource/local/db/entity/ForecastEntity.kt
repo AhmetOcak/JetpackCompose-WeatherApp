@@ -5,10 +5,9 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.composeweatherapp.utils.Database
 
-@Entity(tableName = Database.table_name)
-data class WeatherEntity(
-
-    @PrimaryKey(autoGenerate = false)
+@Entity(tableName = Database.forecast_table)
+data class ForecastEntity(
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
     var id: Int = 0,
 
@@ -30,12 +29,12 @@ data class WeatherEntity(
     @ColumnInfo(name = "description")
     var description: String,
 
-    @ColumnInfo(name = "sunrise")
-    var sunrise: Long,
+    @ColumnInfo(name = "main_description")
+    var mainDescription: String,
 
-    @ColumnInfo(name = "sunset")
-    var sunset: Long,
+    @ColumnInfo(name = "date")
+    var date: String,
 
-    @ColumnInfo(name = "name")
-    var city_name: String,
+    @ColumnInfo(name = "cloudinessDto")
+    val cloudiness: Int,
 )
