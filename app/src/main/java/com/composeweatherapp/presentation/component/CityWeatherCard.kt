@@ -1,4 +1,4 @@
-package com.composeweatherapp.core.component
+package com.composeweatherapp.presentation.component
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*

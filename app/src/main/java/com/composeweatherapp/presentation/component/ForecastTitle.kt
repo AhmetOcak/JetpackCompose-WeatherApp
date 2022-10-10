@@ -1,4 +1,4 @@
-package com.composeweatherapp.core.component
+package com.composeweatherapp.presentation.component
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
