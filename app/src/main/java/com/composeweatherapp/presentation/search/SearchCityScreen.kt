@@ -1,28 +1,24 @@
 package com.composeweatherapp.presentation.search
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.composeweatherapp.R
 import com.composeweatherapp.app.theme.Blue
 import com.composeweatherapp.app.theme.DarkBlue
 import com.composeweatherapp.app.theme.LightBlue
-import com.composeweatherapp.core.component.CityWeatherCard
+import com.composeweatherapp.presentation.component.CityWeatherCard
+import com.composeweatherapp.utils.AppStrings
 
 @Composable
-fun SearchCityScreen() {
+fun SearchCityScreen(onNavigateToHomeScreen: () -> Unit) {
     Scaffold(
         modifier = Modifier
             .fillMaxSize()
@@ -35,7 +31,7 @@ fun SearchCityScreen() {
                     )
                 )
             ),
-        topBar = { TopBarSection() },
+        topBar = { TopBarSection(onNavigateToHomeScreen) },
         backgroundColor = Color.Transparent
     ) {
         Column(
@@ -50,12 +46,12 @@ fun SearchCityScreen() {
 }
 
 @Composable
-private fun TopBarSection() {
+private fun TopBarSection(onBackClick: () -> Unit) {
     TopAppBar(
         modifier = Modifier.statusBarsPadding(),
-        title = { Text(text = "Weather", style = MaterialTheme.typography.h2) },
+        title = { Text(text = AppStrings.topbar_title, style = MaterialTheme.typography.h2) },
         navigationIcon = {
-            IconButton(onClick = {}) {
+            IconButton(onClick = onBackClick) {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_baseline_arrow_back_24),
                     contentDescription = null,
@@ -74,7 +70,7 @@ private fun SearchField() {
         modifier = Modifier.fillMaxWidth(),
         value = "",
         onValueChange = {},
-        placeholder = { Text(text = "Search for a city") },
+        placeholder = { Text(text = AppStrings.placeholder) },
         leadingIcon = {
             Icon(
                 painter = painterResource(id = R.drawable.ic_baseline_search_24),
@@ -92,12 +88,12 @@ private fun CityWeatherList() {
     ) {
         items(7) {
             CityWeatherCard(
-                degree = "19",
+                degree = "19${AppStrings.degree}",
                 coordinates = listOf("23", "12"),
                 city = "Montreal",
                 country = "Canada",
                 description = "Mid Rain",
-                weatherImage = R.drawable.cloud_zap
+                weatherImage = R.drawable.rain_day
             )
         }
     }
