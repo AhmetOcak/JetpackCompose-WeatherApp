@@ -10,14 +10,16 @@ object NetworkService {
 }
 
 object Database {
-    const val current_weather_table = "current_weather_data"
     const val forecast_table = "forecast_data"
     const val database_name = "weather_data.db"
     const val city_table = "city_data"
+    const val my_city_table = "my_city"
 }
 
 object Constants {
     const val UNKNOWN_ERROR = "An unknown error occurred."
+    const val FILL_FIELD = "Please fill in the field."
+    const val UNKNOWN_HOST = "Unable to resolve host \"api.openweathermap.org\": No address associated with hostname"
 }
 
 object ExceptionTitles {
@@ -57,10 +59,18 @@ object AppStrings {
     const val degree = "°"
 
     // SearchCityScreen
-    const val topbar_title = "WeatherDto"
+    const val topbar_title = "Weather"
 
     // SearchCityScreen -> SearchField
     const val placeholder = "Search for a city"
+
+    // SearchCityScreen -> CityWeatherList
+    const val subtitle1 = "My Cities"
+    const val subtitle2 = "Search Result"
+    const val no_city = "You don't have any city"
+
+    // SearchCityScreen -> SearchCityScreenContent
+    const val error_title = "OOOOPS!!!"
 }
 
 object WeatherConditions {
@@ -76,7 +86,7 @@ object WeatherConditions {
 }
 
 object MainWeatherConditions {
-    const val CLOUDS = "CloudsDto"
+    const val CLOUDS = "Clouds"
     const val SNOW = "Snow"
     const val RAIN = "Rain"
     const val THUNDERSTORM = "Thunderstorm"
