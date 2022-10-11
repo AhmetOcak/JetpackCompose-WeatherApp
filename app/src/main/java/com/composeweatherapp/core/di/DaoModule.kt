@@ -2,6 +2,7 @@ package com.composeweatherapp.core.di
 
 import com.composeweatherapp.data.datasource.local.db.room.CityDao
 import com.composeweatherapp.data.datasource.local.db.room.ForecastDao
+import com.composeweatherapp.data.datasource.local.db.room.MyCityDao
 import com.composeweatherapp.data.datasource.local.db.room.WeatherDatabase
 import dagger.Module
 import dagger.Provides
@@ -22,4 +23,9 @@ object DaoModule {
     @Singleton
     fun bindForecastDao(weatherDatabase: WeatherDatabase): ForecastDao =
         weatherDatabase.forecastWeatherDao()
+
+    @Provides
+    @Singleton
+    fun bindMyCityDao(weatherDatabase: WeatherDatabase): MyCityDao =
+        weatherDatabase.myCityDao()
 }
