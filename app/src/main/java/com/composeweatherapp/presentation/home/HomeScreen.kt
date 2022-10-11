@@ -57,7 +57,7 @@ private fun WeatherSection(currentWeatherState: HomeForecastState, errorCardOnCl
     when (currentWeatherState) {
         is HomeForecastState.Loading -> {
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                CircularProgressBar()
+                CircularProgressBar(modifier = Modifier.size(LocalConfiguration.current.screenWidthDp.dp / 3))
             }
         }
         is HomeForecastState.Success -> {
@@ -74,7 +74,11 @@ private fun WeatherSection(currentWeatherState: HomeForecastState, errorCardOnCl
                     currentWeatherState.errorMessage ?: ExceptionTitles.UNKNOWN_ERROR
                 ),
                 errorButtonText = ErrorCardConsts.BUTTON_TEXT,
-                errorCardOnClick
+                errorCardOnClick,
+                cardModifier = Modifier
+                    .fillMaxWidth()
+                    .height(LocalConfiguration.current.screenHeightDp.dp / 4 + 48.dp)
+                    .padding(horizontal = 64.dp)
             )
         }
     }
