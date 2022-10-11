@@ -2,10 +2,7 @@ package com.composeweatherapp.app.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple200 = Color(0xFFBB86FC)
-val Purple500 = Color(0xFF6200EE)
 val Purple700 = Color(0xFF3700B3)
-val Teal200 = Color(0xFF03DAC5)
 val TransparentDarkBlue = Color(0x80252B35)
 val HighTransparentDarkBlue = Color(0xE6252B35)
 val WhiteTransparent = Color(0x40FFFFFF)

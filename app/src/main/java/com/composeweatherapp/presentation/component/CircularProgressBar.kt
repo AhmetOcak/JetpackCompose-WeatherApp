@@ -9,9 +9,9 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun CircularProgressBar() {
+fun CircularProgressBar(modifier: Modifier = Modifier) {
     CircularProgressIndicator(
-        modifier = Modifier.size(LocalConfiguration.current.screenWidthDp.dp / 3),
+        modifier = modifier,
         color = MaterialTheme.colors.secondaryVariant,
         strokeWidth = 5.dp
     )

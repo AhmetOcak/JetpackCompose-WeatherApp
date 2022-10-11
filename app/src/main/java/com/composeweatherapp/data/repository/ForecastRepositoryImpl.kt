@@ -3,7 +3,6 @@ package com.composeweatherapp.data.repository
 import com.composeweatherapp.data.datasource.local.db.CityLocalDataSource
 import com.composeweatherapp.data.datasource.local.db.ForecastLocalDataSource
 import com.composeweatherapp.data.datasource.remote.api.ForecastRemoteDataSource
-import com.composeweatherapp.data.mapper.CityDtoMapper
 import com.composeweatherapp.data.mapper.CityEntityMapper
 import com.composeweatherapp.data.mapper.ForecastDtoMapper
 import com.composeweatherapp.data.mapper.ForecastEntityMapper
@@ -20,7 +19,6 @@ class ForecastRepositoryImpl @Inject constructor(
     private val cityLocalDataSource: CityLocalDataSource,
     private val dtoMapper: ForecastDtoMapper,
     private val entityMapper: ForecastEntityMapper,
-    private val cityDtoMapper: CityDtoMapper,
     private val cityEntityMapper: CityEntityMapper
 ) : ForecastRepository {
     override suspend fun getForecastData(
