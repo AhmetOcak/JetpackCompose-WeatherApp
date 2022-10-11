@@ -11,9 +11,14 @@ import androidx.navigation.compose.rememberNavController
 import com.composeweatherapp.presentation.home.HomeScreen
 import com.composeweatherapp.presentation.home.HomeViewModel
 import com.composeweatherapp.presentation.search.SearchCityScreen
+import com.composeweatherapp.presentation.search.SearchCityViewModel
 
 @Composable
-fun NavGraph(startDestination: String = NavScreen.HomeScreen.route, viewModel: HomeViewModel) {
+fun NavGraph(
+    startDestination: String = NavScreen.HomeScreen.route,
+    homeViewModel: HomeViewModel,
+    searchCityViewModel: SearchCityViewModel
+) {
     val navController = rememberNavController()
 
     Scaffold(
@@ -25,10 +30,10 @@ fun NavGraph(startDestination: String = NavScreen.HomeScreen.route, viewModel: H
             startDestination = startDestination
         ) {
             composable(NavScreen.HomeScreen.route) {
-                HomeScreen(viewModel) { navController.navigate(NavScreen.SearchCityScreen.route) }
+                HomeScreen(homeViewModel) { navController.navigate(NavScreen.SearchCityScreen.route) }
             }
             composable(NavScreen.SearchCityScreen.route) {
-                SearchCityScreen {
+                SearchCityScreen(searchCityViewModel) {
                     navController.navigate(NavScreen.HomeScreen.route) {
                         launchSingleTop = true
                         popUpTo(NavScreen.HomeScreen.route)
