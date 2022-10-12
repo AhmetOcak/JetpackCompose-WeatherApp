@@ -19,7 +19,7 @@ import javax.inject.Inject
 @HiltViewModel
 class HomeViewModel @Inject constructor(
     private val addForecastDb: AddForecastToDbUseCase,
-    private val addCityDb: AddCityDbUseCase,
+    private val addCityDb: AddCityToDbUseCase,
     private val updateCityDbUseCase: UpdateCityDbUseCase,
     private val getForecastDb: GetForecastFromDbUseCase,
     private val updateForecastDb: UpdateForecastDbUseCase,
