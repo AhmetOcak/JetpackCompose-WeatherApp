@@ -2,7 +2,7 @@ package com.composeweatherapp.utils
 
 object NetworkService {
     const val BASE_URL: String = "https://api.openweathermap.org"
-    const val API_KEY: String = "18fcba115a2815e21a21379f65b994ed"
+    const val API_KEY: String = "YOUR API KEY"
     const val UNITS: String = "metric"
     const val CURRENT_WEATHER_END_POINT = "/data/2.5/weather/"
     const val FORECAST_END_POINT = "/data/2.5/forecast"
