@@ -28,6 +28,10 @@ You can enter your API key in the location specified in the Constants.kt file in
 
 * [Accompanist](https://google.github.io/accompanist/insets/)
 
+## Assets 📦
+
+* [Weather Icons](https://designdkblog.blogspot.com/2021/05/get-3d-weather-icons-for-adobe-xd-figma.html)
+
 ## Outputs 🖼
 
 ### Home Screen 🏠
@@ -58,7 +62,6 @@ You can enter your API key in the location specified in the Constants.kt file in
 <img src="https://user-images.githubusercontent.com/73544434/195306292-53c35d32-d5c3-4eea-be5d-2c0b93dd30a0.png" width="240" height="480"/>
   
 </p>
-
 
 ## Project Structure 🏗
 
