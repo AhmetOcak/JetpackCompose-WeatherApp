@@ -42,7 +42,9 @@ You can enter your API key in the location specified in the Constants.kt file in
 
 <p align="left" width="100%">
 
- <img src="https://media.giphy.com/media/0S5RLp4fz72MunYvd6/giphy.gif" width="240" height="480"/>
+ <img src="https://media.giphy.com/media/aTKODI1K4knzOCnhFx/giphy.gif" width="240" height="480"/>
+ 
+ <img src="https://media.giphy.com/media/8EsdaR9oKcl9mwIusL/giphy.gif" width="240" height="480"/>
   
 </p>
 
