@@ -11,7 +11,7 @@ You can enter your API key in the location specified in the Constants.kt file in
 </p>
 
 
-## Api 
+## Api 📦
 * [OpenWeather Call 5 day / 3 hour forecast data](https://openweathermap.org/forecast5)
 
 ## Libraries 📚
@@ -30,7 +30,7 @@ You can enter your API key in the location specified in the Constants.kt file in
 
 * [Accompanist](https://google.github.io/accompanist/insets/)
 
-## Assets 📦
+## Assets 🖼
 
 * [Weather Icons](https://designdkblog.blogspot.com/2021/05/get-3d-weather-icons-for-adobe-xd-figma.html)
 * <a href="https://www.flaticon.com/free-icons/error" title="error icons">Error icons created by Freepik - Flaticon</a>
