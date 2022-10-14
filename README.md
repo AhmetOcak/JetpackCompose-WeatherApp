@@ -7,7 +7,7 @@ WeatherApp is an application that shows you the weather according to your locati
 You can enter your API key in the location specified in the Constants.kt file in the utilites folder.
 
 <p align="left" width="100%">
-  <img src="https://user-images.githubusercontent.com/73544434/195295033-ebffb332-ca01-412b-bc01-f1bd25526567.PNG"/>
+  <img src="https://user-images.githubusercontent.com/73544434/195795703-44bb70f6-cdad-467b-8234-5d7894654363.PNG"/>
 </p>
 
 
