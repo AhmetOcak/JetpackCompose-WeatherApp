@@ -3,7 +3,6 @@
 WeatherApp is an application that shows you the weather according to your location. You can find out by searching the weather information of the city you want. You can save the weather of the city you want. If you have an internet connection, the weather conditions of these cities are updated automatically. Weather information is saved on the device.
 
 <br/>
-<br/>
 
 You can enter your API key in the location specified in the Constants.kt file in the utilites folder.
 
@@ -11,6 +10,9 @@ You can enter your API key in the location specified in the Constants.kt file in
   <img src="https://user-images.githubusercontent.com/73544434/195295033-ebffb332-ca01-412b-bc01-f1bd25526567.PNG"/>
 </p>
 
+
+## Api 
+* [OpenWeather Call 5 day / 3 hour forecast data](https://openweathermap.org/forecast5)
 
 ## Libraries 📚
 
@@ -31,6 +33,7 @@ You can enter your API key in the location specified in the Constants.kt file in
 ## Assets 📦
 
 * [Weather Icons](https://designdkblog.blogspot.com/2021/05/get-3d-weather-icons-for-adobe-xd-figma.html)
+* <a href="https://www.flaticon.com/free-icons/error" title="error icons">Error icons created by Freepik - Flaticon</a>
 
 ## Outputs 🖼
 
