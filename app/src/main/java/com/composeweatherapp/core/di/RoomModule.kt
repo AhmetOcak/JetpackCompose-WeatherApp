@@ -3,7 +3,7 @@ package com.composeweatherapp.core.di
 import android.content.Context
 import androidx.room.Room
 import com.composeweatherapp.data.datasource.local.db.room.WeatherDatabase
-import com.composeweatherapp.utils.Database
+import com.composeweatherapp.core.utils.Database
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

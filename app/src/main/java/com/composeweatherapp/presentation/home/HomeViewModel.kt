@@ -6,8 +6,8 @@ import com.composeweatherapp.domain.model.City
 import com.composeweatherapp.domain.model.Forecast
 import com.composeweatherapp.domain.usecase.forecast.*
 import com.composeweatherapp.domain.usecase.location.GetLocationUseCase
-import com.composeweatherapp.domain.util.Resource
-import com.composeweatherapp.utils.ExceptionTitles
+import com.composeweatherapp.core.common.Resource
+import com.composeweatherapp.core.utils.ExceptionTitles
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

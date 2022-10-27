@@ -1,4 +1,4 @@
-package com.composeweatherapp.utils
+package com.composeweatherapp.core.utils
 
 object NetworkService {
     const val BASE_URL: String = "https://api.openweathermap.org"

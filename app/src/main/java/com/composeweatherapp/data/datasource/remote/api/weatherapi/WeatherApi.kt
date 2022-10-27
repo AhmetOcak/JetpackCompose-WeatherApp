@@ -1,7 +1,7 @@
 package com.composeweatherapp.data.datasource.remote.api.weatherapi
 
 import com.composeweatherapp.data.datasource.remote.api.entity.ForecastDto
-import com.composeweatherapp.utils.NetworkService
+import com.composeweatherapp.core.utils.NetworkService
 import retrofit2.http.GET
 import retrofit2.http.Query
 

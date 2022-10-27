@@ -2,7 +2,7 @@ package com.composeweatherapp.domain.repository
 
 import com.composeweatherapp.domain.model.City
 import com.composeweatherapp.domain.model.Forecast
-import com.composeweatherapp.domain.util.Resource
+import com.composeweatherapp.core.common.Resource
 
 interface ForecastRepository {
     suspend fun getForecastData(latitude: Double, longitude: Double, ): Resource<Forecast>

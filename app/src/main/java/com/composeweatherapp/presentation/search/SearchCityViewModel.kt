@@ -10,9 +10,9 @@ import com.composeweatherapp.core.helpers.HourConverter
 import com.composeweatherapp.domain.model.MyCity
 import com.composeweatherapp.domain.usecase.forecast.GetForecastWithCityNameUseCase
 import com.composeweatherapp.domain.usecase.my_city.*
-import com.composeweatherapp.domain.util.Resource
-import com.composeweatherapp.utils.Constants
-import com.composeweatherapp.utils.WeatherType
+import com.composeweatherapp.core.common.Resource
+import com.composeweatherapp.core.utils.Constants
+import com.composeweatherapp.core.utils.WeatherType
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

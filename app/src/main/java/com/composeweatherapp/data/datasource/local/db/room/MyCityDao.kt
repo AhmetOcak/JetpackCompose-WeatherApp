@@ -5,7 +5,7 @@ import androidx.room.Insert
 import androidx.room.Query
 import com.composeweatherapp.data.datasource.local.db.entity.MyCityEntity
 import com.composeweatherapp.domain.model.MyCity
-import com.composeweatherapp.utils.Database
+import com.composeweatherapp.core.utils.Database
 
 @Dao
 interface MyCityDao {

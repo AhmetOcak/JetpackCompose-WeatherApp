@@ -9,8 +9,8 @@ import com.composeweatherapp.data.mapper.ForecastEntityMapper
 import com.composeweatherapp.domain.model.City
 import com.composeweatherapp.domain.model.Forecast
 import com.composeweatherapp.domain.repository.ForecastRepository
-import com.composeweatherapp.domain.util.Resource
-import com.composeweatherapp.utils.Constants
+import com.composeweatherapp.core.common.Resource
+import com.composeweatherapp.core.utils.Constants
 import javax.inject.Inject
 
 class ForecastRepositoryImpl @Inject constructor(

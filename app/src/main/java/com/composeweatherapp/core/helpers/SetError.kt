@@ -1,7 +1,7 @@
 package com.composeweatherapp.core.helpers
 
-import com.composeweatherapp.utils.ExceptionDescriptions
-import com.composeweatherapp.utils.ExceptionTitles
+import com.composeweatherapp.core.utils.ExceptionDescriptions
+import com.composeweatherapp.core.utils.ExceptionTitles
 
 object SetError {
     fun setErrorCard(errorTitle: String): String {

@@ -1,4 +1,4 @@
-package com.composeweatherapp.app
+package com.composeweatherapp.core.designsystem
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

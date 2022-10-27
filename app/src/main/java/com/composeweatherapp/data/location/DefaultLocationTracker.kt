@@ -8,7 +8,7 @@ import android.location.Location
 import android.location.LocationManager
 import androidx.core.content.ContextCompat
 import com.composeweatherapp.domain.location.LocationTracker
-import com.composeweatherapp.utils.ExceptionTitles
+import com.composeweatherapp.core.utils.ExceptionTitles
 import com.google.android.gms.location.FusedLocationProviderClient
 import kotlinx.coroutines.suspendCancellableCoroutine
 import javax.inject.Inject

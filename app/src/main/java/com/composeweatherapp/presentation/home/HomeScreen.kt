@@ -19,13 +19,13 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.composeweatherapp.R
-import com.composeweatherapp.utils.AppStrings
+import com.composeweatherapp.core.utils.AppStrings
 import com.composeweatherapp.domain.model.Forecast
 import com.composeweatherapp.core.helpers.EpochConverter
 import com.composeweatherapp.core.helpers.SetError
 import com.composeweatherapp.presentation.component.*
-import com.composeweatherapp.utils.ErrorCardConsts
-import com.composeweatherapp.utils.ExceptionTitles
+import com.composeweatherapp.core.utils.ErrorCardConsts
+import com.composeweatherapp.core.utils.ExceptionTitles
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable

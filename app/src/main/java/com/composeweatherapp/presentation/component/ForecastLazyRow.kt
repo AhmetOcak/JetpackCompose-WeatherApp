@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.composeweatherapp.core.helpers.HourConverter
 import com.composeweatherapp.domain.model.ForecastWeather
-import com.composeweatherapp.utils.WeatherType
+import com.composeweatherapp.core.utils.WeatherType
 
 @Composable
 fun ForecastLazyRow(forecasts: List<ForecastWeather>) {

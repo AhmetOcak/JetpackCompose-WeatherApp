@@ -2,7 +2,7 @@ package com.composeweatherapp.core.di
 
 import android.app.Application
 import com.composeweatherapp.data.datasource.remote.api.weatherapi.WeatherApi
-import com.composeweatherapp.utils.NetworkService
+import com.composeweatherapp.core.utils.NetworkService
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import dagger.Module

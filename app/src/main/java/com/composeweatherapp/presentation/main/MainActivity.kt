@@ -13,7 +13,7 @@ import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.core.view.WindowCompat
-import com.composeweatherapp.app.theme.ComposeWeatherAppTheme
+import com.composeweatherapp.core.designsystem.theme.ComposeWeatherAppTheme
 import com.composeweatherapp.presentation.home.HomeViewModel
 import com.composeweatherapp.presentation.navigation.NavGraph
 import com.composeweatherapp.presentation.search.SearchCityViewModel

@@ -3,7 +3,7 @@ package com.composeweatherapp.data.datasource.local.db.entity
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.composeweatherapp.utils.Database
+import com.composeweatherapp.core.utils.Database
 
 @Entity(tableName = Database.my_city_table)
 data class MyCityEntity(
